@@ -1,9 +1,10 @@
+def fact (n):
+	if n == 0:
+		return 1 
+	return n * fact (n - 1)
+
+
 num = 4
 
-fact =1
-
-for i in range (1,num+1) :
-	fact = fact*i
-
-
-print("Factorial of {0} is: {1} ".format (num, fact))
+# Factorial
+print("Factorial of {0} is: {1} ".format (num, fact(num)))
